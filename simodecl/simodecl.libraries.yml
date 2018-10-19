@@ -1,0 +1,26 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+
+fontawesome:
+  remote: http://fontawesome.com
+  version: 5.4.1
+  license:
+      name: MIT
+      url: http://example.com/LICENSE.txt
+      gpl-compatible: true
+  css:
+    theme:
+        https://use.fontawesome.com/releases/v5.4.1/css/all.css: {}
+
+bootstrap:
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css: {}
+
+global-js:
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/jquery

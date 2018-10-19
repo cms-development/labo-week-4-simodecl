@@ -1,0 +1,44 @@
+<header class="navbar navbar-expand-md border-bottom" role="banner">
+  <div class="container border border-primary">
+    {{ page.header }}
+  </div>
+</header>
+
+<div class="subheader container bg-dark text-white">
+  <div class="row border border-primary">
+    {% if page.subheader_left %}
+    <section class="col-4 border border-primary m-5">
+      {{ page.subheader_left }}
+    </section>
+    {% endif %}
+
+    {% if page.subheader_right %}
+    <section class="col-4 border border-primary m-5">
+      {{ page.subheader_right }}
+    </section>
+    {% endif %}
+  </div>
+</div>
+
+<main role="main" class="container main mt-5 mb-5">
+  <div class="row">
+
+    <div class="col-6 border border-primary">
+      <a id="main-content" tabindex="-1"></a>
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar %}
+    <aside class="col-4 border border-primary" role="complementary">
+        {{ page.sidebar }}
+    </aside>
+    {% endif %}
+
+  </div>
+</main>
+
+{% if page.footer %}
+<footer class="bg-secondary container">
+    {{ page.footer }}
+</footer>
+{% endif %}

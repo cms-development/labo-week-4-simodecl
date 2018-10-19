@@ -1,0 +1,19 @@
+{
+  "name": "simodecl",
+  "version": "1.0.0",
+  "description": "gulp workflow for Drupal 8 theming",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-livereload": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "http://github.com/simodecl",
+  "license": "ISC"
+}

@@ -1,0 +1,28 @@
+<header class="navbar navbar-expand-md border-bottom" role="banner">
+  <div class="container border border-primary">
+    {{ page.header }}
+  </div>
+</header>
+
+<main role="main" class="container mt-5 ">
+  <div class="row">
+
+    <div class="col-6 border border-primary">
+      <a id="main-content" tabindex="-1"></a>
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar %}
+    <aside class="col-4 border border-primary" role="complementary">
+        {{ page.sidebar }}
+    </aside>
+    {% endif %}
+
+  </div>
+</main>
+
+{% if page.footer %}
+<footer class="bg-secondary container">
+    {{ page.footer }}
+</footer>
+{% endif %}
